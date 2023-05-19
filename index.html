@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+
+<body>
+    <!-- <div><h1>header</h1></div> -->
+    <div id="root"></div>
+    <!-- <div><h1>footer</h1></div> -->
+    
+    <!-- <script>
+        /*Adding stuff with Js to div element*/
+        const heading = document.createElement( "h1" );
+        /*  */
+        heading.innerHTML = "Namaste React";
+        const root = document.getElementById( "root" );
+        root.appendChild( heading );
+        🫣/* how we can add stuff with react then  */
+    </script> -->
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <script>
+        const heading = React.createElement("h1",{},"Hello,This is Bahadur")
+        console.log(heading);
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading)
+
+        /*[@identyfire🤖[1st]] to clear you'r doubt
+          [@identyfire🤖[2nd]] to clear you'r doubt
+
+
+          
+        */
+    </script>
+</body>
+
+</html>
