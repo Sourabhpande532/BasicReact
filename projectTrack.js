@@ -113,6 +113,25 @@ go and inject it into 📂index.html
 👩‍💻!🤔♦️ while refresing why loads "not render name" for some sec?? because it loads the document from initial leval so it takes time to react go and inspect go in Network tab - check All -and disable cache it should be "on"
 
 🙄😏H.w async vs defer attributes in Javascript?
+=> 
+-))-async and deffer are boolean attributes that are along use with that script tag to loop the external script efficiently into our webpage.
+
+-))-If you're working with JavaScript, it's important to understand the difference between async and defer attributes. Async allows your script to run as soon as it's loaded, without blocking other elements on the page. Defer means your script will only execute after the page has finished loading.
+-))- when you load the webpage two major things that happning in your browser one is html parsing 2nd one is loading up the scripts.
+
+So, loading of the script containt two parts one is fetcing the script from network & 2nd One is Atually executing the script line by line. they will check the both scenarios so how they behave with this three things async | defer | normal script tags
+
+let's understand in three ways 
+➡️HTMl parsing script => <script/>  => so in the normal scenarios.
+Browser is parsing the HTML line by line  ---> suddenly encounters script tags over that points & html parsing it puase till the fetcing Data from network -->
+@Conclude => Duaration in time Atually Js blocking the stuff between's it's not good things. 
+@🤔SideNote: Async Does not give you guarenty the order of execution of script but ❕🫣deffer does always preff deffer.
+when to use asyn suppose you have to load some external script let's take a e.g of google anylytics script which are point modular that are independent are normal code so that time it make sence to use this one O.W not.
+➡️HTMl parsing script with Async attributes=>
+ so Html parsing is goes on + in paraller fetch the script from network & as soon as the script are fetch & avalable in the browser then script are executed only then html parsing is continue. in this period of time html parsing is block.
+➡️HTMl parsing script with deffer attributes=>
+ Once the html parsing is complete then it will load the script that's it's only executed till the HTML parsing until or unless completed o.w not Html parsing is continuosly goes on & script are fetch in parallel 
+@🤔SideNote:Mostly use deffer attributes because it maintains the order of script execution of script
 ref=> https://youtu.be/IrHmpdORLu8
 
 
