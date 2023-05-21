@@ -5,13 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste React</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <div id="root">Not Rendered</div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="App.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!--Only for Learning Practice 👇  -->
+
     <!-- <div><h1>header</h1></div> -->
-    <div id="root"></div>
+    <!-- <div id="root">
+        <h1 id="title">Hellow,This is Nameste React</h1>
+        <h1 id="title">Hellow,This is Nameste React</h1>
+        <h1 id="title">Hellow,This is Nameste React</h1>
+        Not Rendered
+    </div> -->
     <!-- <div><h1>footer</h1></div> -->
-    
     <!-- <script>
         /*Adding stuff with Js to div element*/
         const heading = document.createElement( "h1" );
@@ -20,24 +38,4 @@
         const root = document.getElementById( "root" );
         root.appendChild( heading );
         🫣/* how we can add stuff with react then  */
-    </script> -->
-
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    
-    <script>
-        const heading = React.createElement("h1",{},"Hello,This is Bahadur")
-        console.log(heading);
-        const root = ReactDOM.createRoot(document.getElementById("root"));
-        root.render(heading)
-
-        /*[@identyfire🤖[1st]] to clear you'r doubt
-          [@identyfire🤖[2nd]] to clear you'r doubt
-
-
-          
-        */
-    </script>
-</body>
-
-</html>
+</script> -->
