@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*-what is arrow function & is it reffer this keyworkd or not what is defference between narmal function and arrow function in objects ?? */
+        // console.log(this);
+        const obj1 = {
+            //Narmal function
+            fn: function() {
+                console.log( this );
+            },
+            //Arrow function
+            fn2: () => {
+                console.log( this );
+            }
+        }
+        obj1.fn();  //reffers to "objects" -> {fn: f, fn: f}
+        obj1.fn2(); // reffers to "parent directly" -> window
+
+        // 2nd e.g 
+/*         function x() {
+            console.log( this );
+            return function y() {
+                console.log( this );
+            }
+            return function z() {
+                console.log( this );
+            }
+        }
+        x()()(); */
+        // ☝️ this does not depends where you are it depend how this function called 
+
+
+        //3rd e.g 
+        const person1 = {
+            name: "Saurabh"
+        }
+        const person2 = {
+            name: "Prajwal"
+        }
+        function Q(){
+            console.log(this);
+        }
+        Q();
+        Q.call(this);
+        Q.call(person1);
+        Q.call(person2);
+
+
+
+    </script>
+</body>
+
+</html>

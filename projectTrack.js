@@ -1,8 +1,23 @@
 /* 
 👋@heading@👋
 
- 👩‍💻♦️ Do you know react is a library or framework  🤔??
+ 👩‍💻♦️What is "react"? Do you know "react" is a library or framework  🤔??
  =>Library, Major defference between two of them is that,it takes minimum efforts.so when I say something as a library framework it simply means full fladges framework when we build our apps/web it needs a lot of things it needs routing, you'll need different routes where you can go different pages migrating through over that and there are lot more component inside your app react come as a small "library".
+
+ -By the term Library it mean what's ? 
+  -some who already write some code for us that's exactly it is->see 👇 
+  -ref: - 🖇️https://unpkg.com/react@18.2.0/umd/react.development.js
+
+  @🫣sideInfo:> who give the superpowers to "window" object while in terminal 
+  @🫣obivious:> Js engine so, similarly where we'll get superpowers of react?
+  @🫣obivious:> in react library, so with you can do stuff:-> go in terminal & write it down individully React,ReactDom just like window object it does give the same scenarios
+
+  😍😎🥰Best thing about react is that it does not enforce you to do anything it can use any library & it is build by open sourch powered by open source so to get all this thing we need some 😱"bundles"
+
+
+
+  👩‍💻🤔♦️ What is CDN(Content Delivery Network)?
+   =>  :-> it is a faster way to fetching that code.  
 
 🎈@Followup@🎈...................
 
@@ -22,6 +37,8 @@
 👩‍💻🤔♦️ how does browser get to know about this document.createElement("h1") what is "document" in this case?
          => it's obivious it comes from browser Api's browser know what is document. browser has a js engine it is knows basically what is happning inside you'r browser & browser know about 
          window.document; <= who gave us this functinality, it's obivious 'Js-engin'
+👩‍💻🤔♦️what is createElement >
+->it's an API's          
 
 ♦️🛕H.W read about "react cdn"👀
 
@@ -49,7 +66,7 @@ go and inject it into 📂index.html
 
       ---------------------
      🙋[@identyfire🤖[1st]
-👩‍💻🤔♦️ How to create <h1>Hellow,react<h/> and show to home page in react??
+👩‍💻🤔♦️ How to create <h1>Hellow,react</h1> and show to home page in react??
        react gives us this api's which is know as react.createElement it expect three arguments here. 
       1st - tags, 2nd - object, 3rd - content(inside h1)
       task is inject it into "<div class="root"/>" need to tell the react root element there is the place where we need to inject code so react gives you a api know as ReactDom.    
@@ -65,7 +82,8 @@ go and inject it into 📂index.html
         => react element is nothing but an objects isn't it amazing at the end of the day it feels like it's not jsx, this is a plane JS object of type h1.
 
  👩‍💻🤔♦️ Now how does react stored this h1 element ??
-        =>if you explore this link 🖇️https://unpkg.com/react@18.2.0/umd/react.development.js so inside link code is taking code as an argument ("h1",{},"Hello,This is Bahadur")<-- this one & making an object out of it.
+        =>if you explore this link 
+        🖇️https://unpkg.com/react@18.2.0/umd/react.development.js so inside link code is taking code as an argument ("h1",{},"Hello,This is Bahadur")<-- this one & making an object out of it.
 
  👩‍💻🤔♦️ At the end of the day if anybuddy's ask you what is react element?? 
        =>it's obivious it's an "objects"
@@ -74,6 +92,7 @@ go and inject it into 📂index.html
        => so when you pass this inside render methods so basically this render methods      
         takes in an reactElement & modifies our dom go and check on web page do inspect and check in Element section.
         now,we got the h1 over there how does the h1 came in? that react-dom library that render funntion put this up it is as simple as that 
+        
 👩‍💻🤔♦️  Can i do innerHTML on this ??
      => yes, man obivious
 
@@ -143,9 +162,15 @@ ref=> https://youtu.be/IrHmpdORLu8
     </div> 
     Go => 📂App.js 
 
+👩‍💻🤔♦️ Do you know what is Data Structure use for stroing memory storage??
+   => that is "callstack" callstack is defferent that memory heap So, what happend is go ahead and stored it in memory while creafting some code like variable & function.
 
-
-
+👩‍💻🤔♦️ Do you know what is function expression ??
+   =>  yes, when we call annanomous function and stored it specifically into some variable is know as function expression.
+   e.g const x function (){console.log("This is Annnoumous function");}
+   So, when i say it's an expression what do i mean so 
+   -expression is something that evaluate something e.g 34,45,console.log(x)
+   -expression is something which something execute.
 
 
    
