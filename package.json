@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Sourabhpande532/BasicsReact/issues"
   },
-  "homepage": "https://github.com/Sourabhpande532/BasicsReact#readme"
+  "homepage": "https://github.com/Sourabhpande532/BasicsReact#readme",
+  "devDependencies": {
+    "parsel": "^0.3.0"
+  }
 }

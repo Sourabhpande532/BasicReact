@@ -6,7 +6,7 @@ const heading = React.createElement(
   },
   "Heading 1"
 );
-console.log( heading );
+console.log(heading);
 /*In genral-> <h1 id="title" className="john">Heading 1 </h1> */
 
 const heading2 = React.createElement(
@@ -24,12 +24,11 @@ const container = React.createElement(
   "div",
   {
     id: "container",
-    hellow: "world"
+    hellow: "world",
   },
   [heading, heading2]
 );
 /*👆@identyfire[🙊(about react and props)] @resides:📂pt_one.js*/
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(container);
