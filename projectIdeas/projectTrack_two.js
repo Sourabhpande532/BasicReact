@@ -72,7 +72,7 @@ So,How do we get Parser
   =>
   So, when i use this "devDependencies": {"parsel": "^0.3.0" }
   if this,let suppose you'r version changes to "^0.3.1" my project is suppose to be have upgrade. 
-  -So to know what exact version we use on Production Or do we need for Production we use package-lock-json. it exactly tell you the version of which library you'r using if you go and scrooll down you get exact version but 😱Given the fact there is no symboll like ^ ~ "" like that why??⁉️
+  -So to know what exact version we use on Production Or do we need for Production we use package-lock-json. it exactly tell you the version of which library you'r using if you go(package-lock-json) and scrooll down you get exact version but 😱Given the fact there is no symboll like ^ ~ "" like that why??⁉️
   
   🤔🫣Have you heard one convection/statments? that it is working on my local but it is not working on Production? everybuddy's facing same issues, why?
    => 
@@ -86,12 +86,50 @@ So,How do we get Parser
 
   MAJOR version increment indicates incompatible(destract one) API changes. MINOR version increment indicates addition of functionality in a backwards-compatible manner. PATCH version increment indicates backwards-compatible bug fixes.
 
+-------------)NEW)------------
+
+  @ABOUT:---> what is packaglockjson,node_modules & create react app.
  
+
+  🙆‍♂️what is packaglockjson?
+   -🎗️it is very important file it locks the version
+   @🫣🤫KeepNote: Never ever put you'r "packaglockjson" into gitignore.if you put this into gitignore it's 100% chance of error.
+   -why it's because you'r machines is just stimulated machines you'r project run on server.
+   🧑‍💻client machines  ◀️---- github(server)  ----▶️ 🖥️ server machines
+   so,want packaglockjson has to be exact version so this need to send server as well but it won't go dirctly because it needs be pass from git server as well then it shipt to server machines(server will fetch from this git so we need packaglockjson 100% in git) that's what we need to pass exectly. 
+   -🎗️it maintains the exact version of it,it keeps on track.
+   -🎗️it maintains the hash of it as well 
+
+   -what is this integrity": "sha512-2Hux... in packaglockjson??
+    🫵it maintains the hash of it as well. this has ensures that what exactly the version parsel was running on my system is exactly the same on Production or not that's how it maintains the integrity that's is why it is sha512 formate.
+    @sha512: Regarding neawer version of node;
+    
+   🧐what is node_modules😵‍💫 when somebudyy hit npm i <package>?
+     -🎗️it is kind of DataBase for you'r all npm packages where all code includes in BUNDLERS forms.
+     -🎗️this is form where all superpowers has comes up here.
+     -🎗️how you'r parsel minify you'r code go and see on node_modules?
+     -🎗️it is helper function.
+     -🎗️it always go through PROCESS our project depend on parsel depend on parsel (minifires)BUNDLERS that present inside node_modules
+     -🎗️there is browserlist -> what does it do? so this browserlist helps us to make our app compatible older version of browser e.g enternet explore.
+     @node-gyp-build: needs to be install "optionally"(solve error);
+     @Makesure: it should'nt be on @github 
+     😵‍💫Why we don't put it on git?? 
+     -🎗️packaglockjson & package-json has sufficient amount of information to recreate node_modules. it keeps on track all the Dependency and Versioning.
+     @😗IMP-> packaglockjson helps us to generate node_modules on to our server. one is at 🧑‍💻localmachine & and one is at 🖥️server that's it. we need to create node_modules by own on to a server Ok.   
+
+     Now, what amazing thing parsel can do??
+     @NOTE: -> Don't use CDN & write code( Not good way)
+     @why:  -> react keeps on updating thing to get rid of that. 
+               then need to change CDN link also so that's why
+               & usually not found this one our node-modeule so what is easy for us for fetch data form CDN or server, obivious from server. 
+
+    let Us now create first create-reacta-app?
+    @FOLLOW_PROCESS↙️
+    -🎗️npm i react 
+    -🎗️npm install react-dom 
+    -🎗️npx parsel index.html(entry-point) 
+     😵‍💫npx:--> what does that mean? execute code by using npx 
   
-
-
-
-
 
 
  */
