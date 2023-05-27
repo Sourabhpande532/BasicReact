@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM  from "react-dom/client";
+
 const heading = React.createElement(
   "h1",
   {
@@ -32,6 +35,7 @@ const container = React.createElement(
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(container);
+
 /*[@identyfire🤖[1st]] to clear you'r doubt show to home page in react
   [@identyfire🤖[2nd]] to clear you'r doubt
   [@identyfire🤖[3rd]]  why there is empty "object" {}*/

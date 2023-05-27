@@ -127,9 +127,17 @@ So,How do we get Parser
     @FOLLOW_PROCESS↙️
     -🎗️npm i react 
     -🎗️npm install react-dom 
-    -🎗️npx parsel index.html(entry-point) 
-     😵‍💫npx:--> what does that mean? execute code by using npx 
-  
+    -🎗️npx parsel index.html(entry-point) it started the ser server with is 
+     😵‍💫npx:--> what does that mean? execute code by using npx take ADVANTAGE of node_modules
+
+     @Accendentaly we got 🔺"Error" why because we previously use "CDN" and we removed from it. in order to resolve that error we need to bring info from node_modules for that we need to "import" stuff on to App.js
+
+     So what is ReactDOM?
+     this is the package which manipulating the dom;
+
+     @KEEPNOTE:-> Never Ever touch node_modules,packaglockjson file.
+     @KEEPNOTE:-> Need to tell browser:-> type ="module"
+     O.W throwth error. in index.html because browser or narmal js don't what is import we need tell this is not narmal js file this is module in js.
 
 
  */
