@@ -37,6 +37,10 @@
    - Vs Code 
  
 ♦️🛕H.W read about "Emmet"👀
+-🎗️Emmet is a toolkit for web developers that can significantly improve your HTML and CSS workflows.
+-🎗️It allows you to type shortcuts that are then expanded into full pieces of code. By using Emmet, developers type less, they save both on keystrokes and time.
+-🎗️Also relying on Emmet's "auto completion" means fewer typos and missing tags, leading to more robust and valid files
+
 
 👩‍💻♦️ As we saw react it is a Javascript libraray when we say it is a library it mean any other Library & you can inject this react into you'r code as many as times or bare minimum things. 
 👩‍💻♦️ React it is a global object/element/variable you can use anywhere.
@@ -79,7 +83,15 @@ go and inject it into 📂index.html
       task is inject it into "<div class="root"/>" need to tell the react root element there is the place where we need to inject code so react gives you a api know as ReactDom.    
       
 👩‍💻🤔♦️ what is ReactDom??
+       -  it is responsible for all DOM operations/manipulation.
+       -🎗️first link in a CDN which is "react" is a core library of react & 
+       -🎗️2nd one which is ReactDom that it is a library it gives you access to document object model(DOM) let's suppose i want write code which goes into browser so it happend one base on "ReactDom"
+       -🎗️let's suppose I've root & want to run react code inside root & want to modify this so how do i tell react this where we need to inject our code this is place where want to run my react code so react gives a API that's hwo react-dom
+
+      -🎗️Dom mean web version of react we've injected web version of react.
        because I'm going to modify my dom reading something form Dom that's is 2nd picture came into play "ReactDom" how do we modify in the wake "crateRoot"(this tell the react what is going to inject that it mean tell "root")
+       -🎗️ReactDom.createRoot -> react needs to where you want to inject code.
+
 👩‍💻🤔♦️ What is React element at the end of the day & when you do react.render() what it will happend?
 
        it's an "object", & ans => render will modify you'r dom      
@@ -93,7 +105,7 @@ go and inject it into 📂index.html
         🖇️https://unpkg.com/react@18.2.0/umd/react.development.js so inside link code is taking code as an argument ("h1",{},"Hello,This is Bahadur")<-- this one & making an object out of it.
 
  👩‍💻🤔♦️ At the end of the day if anybuddy's ask you what is react element?? 
-       =>it's obivious it's an "objects"
+       =>it's obivious it's an "objects" {}
 
  👩‍💻🤔♦️ what if || or what'll happened root.render(heading) when you passing a react Element inside the root? 
        => so when you pass this inside render methods so basically this render methods      
