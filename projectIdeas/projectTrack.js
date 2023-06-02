@@ -58,10 +58,15 @@ go and inject it into 📂index.html
 
 
 ♦️🛕H.W read about "What is crossorigin"👀
+Ref:-> https://legacy.reactjs.org/docs/cdn-links.html
+-🎗️If you serve React from a CDN, we recommend to keep the crossorigin attribute set:
+""<script crossorigin src="..."></script>""
+-🎗️We also recommend to verify that the CDN you are using sets the Access-Control-Allow-Origin: * HTTP header:
+-🎗️This enables a better error handling experience in React 16 and later
 
- -Web pages often make requests to load resources on other servers. Here is where CORS comes in. A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain
+ -🎗️Web pages often make requests to load resources on other servers. Here is where CORS comes in. A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain
  @what is CORS??
- Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.
+ -🎗️Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.
 
 👩‍💻🤔♦️ what is shortest program of javascript ??
      =>The shortest JS program is"empty file". Because even then, JS engine does a lot of things. As always, even in this case, it creates the GEC(general education curriculam) which has memory space and the execution context. JS engine creates something known as 'window'
@@ -104,13 +109,16 @@ go and inject it into 📂index.html
         =>if you explore this link 
         🖇️https://unpkg.com/react@18.2.0/umd/react.development.js so inside link code is taking code as an argument ("h1",{},"Hello,This is Bahadur")<-- this one & making an object out of it.
 
- 👩‍💻🤔♦️ At the end of the day if anybuddy's ask you what is react element?? 
+ 👩‍💻🤔♦️ At the end of the day if anybuddy's ask you what is react element?? and what is react ??.
        =>it's obivious it's an "objects" {}
 
  👩‍💻🤔♦️ what if || or what'll happened root.render(heading) when you passing a react Element inside the root? 
        => so when you pass this inside render methods so basically this render methods      
         takes in an reactElement & modifies our dom go and check on web page do inspect and check in Element section.
         now,we got the h1 over there how does the h1 came in? that react-dom library that render funntion put this up it is as simple as that 
+
+👩‍💻🤔♦️ what is best thing ABOUT react ?
+      => it's an API and fact: in react we called "tags" as element(e.g "h1","spam"...).        
         
 👩‍💻🤔♦️  Can i do innerHTML on this ??
      => yes, man obivious
@@ -133,6 +141,7 @@ go and inject it into 📂index.html
       🙋[@identyfire🤖[3rd]]  why there is empty "object" {}
 
        👩‍💻!🤔♦️ why there is empty "object" {} in line no. 29 arround between?
+          @FOLLOUP=> react expect 3thing -Tags, attributes, children
          🖇️https://react.dev/reference/react/createElement 
              Go and explore this link
           - const element = createElement(type, props, ...children)
@@ -207,5 +216,24 @@ props -> it is just like property & just like an attributes where you can inject
 🤔🙄what is caching? & do we need chching?
 -Yes,Caching is a mechanism to improve the performance of any type of application. Technically, caching is the process of storing and accessing data from a cache. But wait, what is a cache? A cache is a software or hardware component aimed at storing data so that future requests for the same data can be served faster.
 -In computing, a cache is a high-speed data storage layer which stores a subset of data
+
+
+🤔🙄In,react when we have to pass multiple thing in div element need to pass "childrean" inside array it's mandatory overthere e.g [head1,head2]" heading1 "& "heading2" stored in const & crate element just belew one =>h1,h2 forms & put it into divContainer. 
+@🔺CODE: e.g const heading = React.createElement("div",{},[heading1,heading2]
+heading1 & heading2 it's nothing but an reactElement and reactElement it's object. 
+
+🤔🙄 WHY JSX in react ??(@QuestionBaseOn_🔝↖️)
+-🎗️Let's supppose yo'v to create big html file So do you think is it complicated ?? or easy🧐?? it's obivious "complicated" let's suppose you've to build whole website so it it possible or complicate stuff like that react came with building React.createElement(...) 👈but "this was not" not user friendly. 
+-🎗️so,this complicated stuff or to get rid of this complication & one more due to not user friendly stuff JSX came into picture.
+-🎗️because react came in with the idea of html inside JavaScript css into javascript so don't have go in you'r HTML doc that's why.
+
+So, let's move to proacticle one.
+
+🤔🙄 what is defference between react.producttion.js and react.development.js in CDN link ? what does that? go and react cdn website.
+-This are the minified files which contain similar question & there is no major difference.
+react.production: it's much more optimize way for product use. 
+
+🤔🙄 what is functinality of root.render?
+it just modifies our DOM this is the way.
 
 */

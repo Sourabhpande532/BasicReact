@@ -7,13 +7,17 @@ So what is parsel🤔??
 it is something know as "Package" By the term Package it's mean what ? it is kind of a modeule or a package of Javascript files some peace of code. for that we need to use @package manager.
 -npm(Officially Npm Does not stand for "Node package manager" but it is basically doing the same thing)
 
-🤔 Do you know what BUNDLERS React use in general originally which create-react-app?
--> They use "webpack" Most React apps will have their files “bundled” using tools like Webpack, Rollup or Browserify and !Babel it's an compiler(Babel enables React developers to use the latest JavaScript syntax in their components. Babel transpiles modern JavaScript for use in React)
+🤔 Do you know what BUNDLERS React use in general originally which create-react-app?[🔺vite,🔺webpack,🔺parsel,🔺Babel] 
+->🎗️ it is responsible for perform lot more operations.
+->🎗️ They use "webpack" Most React apps will have their files “bundled” using tools like Webpack, Rollup or Browserify and !Babel it's an compiler(Babel enables React developers to use the latest JavaScript syntax in their components. Babel transpiles modern JavaScript for use in React)
 
+->🎗️In the originally create react app BUNDLERS they use is know as ""webpack"" & Babel as well.
+
+Ref:-> 🔗✈️https://create-react-app.dev/
 -@working
- on create-react-app
- -@TERMINAL_process
- -npm init + enter
+ on create-react-app(use "webpack" BUNDLERS)
+-@TERMINAL_process
+-npm init + enter
 
  👋🤔So what does that mean when you've package-manager? what is package.json? what is Npm🤔? & 🤔why npm?
 
@@ -21,14 +25,14 @@ it is something know as "Package" By the term Package it's mean what ? it is kin
  -😶‍🌫️coming to "npm"->it is use to manage our packages
  -😶‍🌫️coming to "why npm"-> -⤵️
 
- a)-becz our entire application base on packages so we need package in order to run. 
- b)-it does not run on just react-only it has lot of superpowers which we need & those superpowers comes from defferent packages which packages are present by using npm. it is like maven for "UI" 
- c)-in addition to our react app cannot be build by just injecting into our web it has packages which provide more powers via npm.
+ a)-🎗️becz our entire application base on packages so we need package in order to run. 
+ b)-🎗️it does not run on just react-only it has lot of superpowers which we need & those superpowers comes from defferent packages which packages are present by using npm. it is like maven for "UI" 
+ c)-🎗️in addition to our react app cannot be build by just injecting into our web it has packages which provide more powers via npm.
 
  @🫣CONCLUSION_ON_WHY_NPM ->  Interview Perspective give ans belew one;
- a)we want to manages lot of packages our react is huge app with just does not run on react there are lot more superpowers,lot more functionality which we need & those superpowers comes from deff'nt packages which packages are present by using NPM. 
+ a)🎗️we want to manages lot of packages our react is huge app with just does not run on react there are lot more superpowers,lot more functionality which we need & those superpowers comes from deff'nt packages which packages are present by using NPM. 
 
- b)react it's powered by lot of thing,packages let just say we need to minify up,neet to BUNDLES things, need to varify, need to do tree shaking, remove console log,we need to do chunking  let's suppose optimize our apps so for that we need lot more "helper packages" & those helpers packages comes inside "npm".
+ b)🎗️react it's powered by lot of thing,packages let just say we need to minify up,neet to BUNDLES things, need to varify, need to do tree shaking, remove console log,we need to do chunking  let's suppose optimize our apps so for that we need lot more "helper packages" & those helpers packages comes inside "npm".
  Now we got package-json;
 
 
@@ -57,7 +61,7 @@ So,How do we get Parser
    @ABOUT-🔝 
    ^  ↩️(know as "Caret" instead of this one(^) you can use tilde(~) over there if you want) if doubt see ⤵️
   -it is the way for use to tell which version should we uses major and miner version of parsel.
-
+  [🔺^ , 🔺~, 🔺""]
   "^" ↩️ It mean if the new version came it'll Automatically updated when you use this "^" e.g 0.1.1 to turn into 0.1.2 only happened for minor version.
   "~" ↩️  if you want to upgrade this into major version we will use "~" tilde  instead one ("^")
   ""  ↩️  if you give this without sign mean "0.3.0" I just want this version only not anyone mean i don't want any update that's the concept of all.

@@ -1,0 +1,22 @@
+{
+  "name": "namastereact_one",
+  "version": "1.0.0",
+  "description": "this is live learning",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sourabhpande532/BasicsReact.git"
+  },
+  "author": "sp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sourabhpande532/BasicsReact/issues"
+  },
+  "homepage": "https://github.com/Sourabhpande532/BasicsReact#readme",
+  "devDependencies": {
+    "parsel": "^0.3.0"
+  }
+}
