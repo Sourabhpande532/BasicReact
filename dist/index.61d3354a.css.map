@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/index.css"],"sourcesContent":["#container{\r\n    color: yellow;\r\n    font-size: 2rem;\r\n    font-weight: bolder;\r\n}"],"names":[],"version":3,"file":"index.61d3354a.css.map","sourceRoot":"/__parcel_source_root/"}

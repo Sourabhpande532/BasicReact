@@ -143,5 +143,60 @@ So,How do we get Parser
      @KEEPNOTE:-> Need to tell browser:-> type ="module"
      O.W throwth error. in index.html because browser or narmal js don't what is import we need tell this is not narmal js file this is module in js.
 
+     #🔺!IMP:-: need to import react & ReactDOM(App.js)
+
+   -------------)NEW)------------
+
+   HMR:-->(HOT-MODULE-RELOADING)
+
+   When it happened:-> after save it Automatically load webside & update it. like apply color,apply fontSize.....
+   Who is doing 🧐? Parsel
+
+   How Does HMR work 🧐?? How does it Do?
+   :-> Something know as ""File Watcher algorithm""(copowred by "C++") parcel uses this algorithm to keep a track.
+
+
+   Q) Does parcel Need some space 🧐?? while doing stuff HMR ? & what is parcel-cache ??
+
+   :-> of course everybuddy want space but parcel don't ask for space but need space. 
+   ----------
+   :-> whatever operations HMR & FWR & Minification of your file....parcel is doing it for you it uses all this file present on 📂parcel-cache.
+
+   What is dist folder 🧐??
+   -🎗️Keep the files minify for us.
+
+   -🎗️So,this is Development Build when we use "npm start", "npm run dev", "npx parcel src/index.html" in terminal so this is just create a "faster Development" version of our project & serve it on server. 
+
+   -🎗️it just create a "Development Build" for us & it hoasted on server.
+   -🎗️What if we tell the parsel, make a Production Build "npx parcel build src/index.html" so how do I tell the parcel make s Production build ?🧐? :-> I tell it by using "build" command-
+   -& when you say this it create a lot more thing,it will minify you'r file it'will do lot more thing.- 
+   -🎗️& where it'll push this build 🧐? parcel will build all the Production files into my 📂"dist" folder.
+
+   -Let'suppose you delete 📂"dist" folder ?
+
+   Now if hit ""npx parcel build src/index.html(Production purpose)"" will it work or not 🧐?? Not it show error! so to git rid of ↙️
+
+   @😗👉KEEP_NOTE:-> After that need to clean entry point "package.json"
+   when we use "parcel" no need to specified ep(main: "App.js") becz parcel give already previledges in terminal use this one -> "npx parcel build src/index.html" in the form of command. NOW Hit enter.
+
+   :-> -🎗️ now it absoluterly work it create 3 files for us whatever file present on dist 📂folder know as "helper file(map)" 
+   -:->-🎗️Now as we grow ther are lot more file But why it give me 3 files 🧐??
+   :-> -🎗️let me tell what is parcel🧐?? it is BUNDLERS it is a bundling the things when we create a Production build it create this 3 files & push it into 📂dist folder.
+   :-> -🎗️Now,you'll get 3 file overther & doing the process of minify our project & this is code that you imported.
+   :-> -🎗️you'll get at the end of code our little bit Js code while scroll up. @find_key on index.js file
+   -So, this is code where react & ReactDOM code imported from this 📂dist folder.
+
+   -@👉😗WHAT_PARCEL_DOES_IT_FOR_US:[HMR,FWR,bundling,minifying,cleaning our code(in the sense you'll never ever find console.log() in dist/index.js), Just taking less time(e.g: 2.07:when we build for production build as compare Development build(try:-> npx parcel src/index.html && for saving as well take too time))
+   -@Conclusion:->Pracel take care all the Development and the production.
+  ]
+   
+   
+
+
+
+
+
+     
+
 
  */
