@@ -149,7 +149,7 @@ So,How do we get Parser
 
    HMR:-->(HOT-MODULE-RELOADING)
 
-   When it happened:-> after save it Automatically load webside & update it. like apply color,apply fontSize.....
+   When it happened 🧐?:-> after save it Automatically load webside & update it. like apply color,apply fontSize..... the process of this functionality is know as HMR.
    Who is doing 🧐? Parsel
 
    How Does HMR work 🧐?? How does it Do?
@@ -174,20 +174,70 @@ So,How do we get Parser
 
    -Let'suppose you delete 📂"dist" folder ?
 
-   Now if hit ""npx parcel build src/index.html(Production purpose)"" will it work or not 🧐?? Not it show error! so to git rid of ↙️
+   Now if hit ""npx parcel build src/index.html(Production purpose)"" will it work or not 🧐?? 
+   Not it show error! so to git rid of ↙️
 
    @😗👉KEEP_NOTE:-> After that need to clean entry point "package.json"
    when we use "parcel" no need to specified ep(main: "App.js") becz parcel give already previledges in terminal use this one -> "npx parcel build src/index.html" in the form of command. NOW Hit enter.
 
    :-> -🎗️ now it absoluterly work it create 3 files for us whatever file present on dist 📂folder know as "helper file(map)" 
    -:->-🎗️Now as we grow ther are lot more file But why it give me 3 files 🧐??
-   :-> -🎗️let me tell what is parcel🧐?? it is BUNDLERS it is a bundling the things when we create a Production build it create this 3 files & push it into 📂dist folder.
+   :-> -🎗️let me tell what is parcel🧐?? it is BUNDLERS it is a bundling the things when we create a Production build it create this 3 files as of now & push it into 📂dist folder.
    :-> -🎗️Now,you'll get 3 file overther & doing the process of minify our project & this is code that you imported.
    :-> -🎗️you'll get at the end of code our little bit Js code while scroll up. @find_key on index.js file
    -So, this is code where react & ReactDOM code imported from this 📂dist folder.
 
-   -@👉😗WHAT_PARCEL_DOES_IT_FOR_US:[HMR,FWR,bundling,minifying,cleaning our code(in the sense you'll never ever find console.log() in dist/index.js), Just taking less time(e.g: 2.07:when we build for production build as compare Development build(try:-> npx parcel src/index.html && for saving as well take too time))
-   -@Conclusion:->Pracel take care all the Development and the production.
+  -@👉😗WHAT_PARCEL_DOES_IT_FOR_US:↙️
+      --[🔺HMR,🔺FWR,🔺Bundling,
+      --🔺minifying,
+      --🔺cleaning our code(in the sense you'll never ever find console.log() in dist/index.js), 
+      --🔺Just taking less time(e.g: 2.07:when we build for production build as compare Development build(try:-> npx parcel src/index.html && for saving as well take too time so for that use above)) it manage 
+      --🔺"dev and production Build",
+      --🔺super Fast Build algorithm, 
+      --🔺parcel does images optimization & compression it also,
+      --🔺Caching while Development(just "remove 📂.parcel-cache" & run npx parcel src/index.html) + ctrl+s continusly hit 3 or 4 time so you'll get less time 5s,3s,2s,1s each time hit The whole process is know as reducing the time is  "Caching" 
+      --🔺compression(by them term means what it rename Everything go file dist/index.js see at bottom) it supports
+      --🔺compatible with older version of browser(it add polyfills)
+      --🔺HTTPS on dev(somethimes need to check our app on HTTPS so parcel can give u a that functionality to run our app only https on ""local dev machines"" @👉TYPE:-> npx parcel src/index.html --https took more time to load 400ms] this parcel uses
+      --🔺consistent Hashing Algorithm(to cache thing up)
+      --🔺Zero Config
+
+      --🔺Transitive Dependensis(one dependant on another another dependant on another....continue cycle is know as) 
+
+      @↖️--LINK--↙️@
+
+      IF Parcel Is not Responsible for this Then what 🧐??
+      :->then The packages,node_modules parcel is not doing in itself they always ask for those packages if you go on packaglockjson find "parcel" you'll get to know it has dependant on anather another dependant on 3rd one ....continue cycle is know as" Transitive Dependensis"
+
+      @↖️--LINK--↙️@
+
+      @😗INTERVIEW__PERSPECTIVE😗@
+      @-SAYS-@: We've package-manager which handles & takes care of transistive dependencies on our Code.
+
+      
+   -@Conclusion:->Pracel take care all the Development and the production defferences.
+
+   -------------)NEW)------------
+   Q) 🧐In our Webside, what is most heaviest thing on the webbrowser when we load any website ? what it takes too time to load?
+   -> images, media, not node_modules remember(😱Given the fact node_modules not on our webside is it on server Only ""production build"" come to on our webside).
+
+   ->node_modules come absoluterly but in minify form if you take a look on 📂dist folder you'll get.
+
+   ->so to get rid of parcel jump one more time & take care of 🔺image optimization also. make sure you'r images come from project not backend o.w won't work.
+
+    Q)🧐What is caching in JavaScript?
+    Caching is the process of storing data in a high-speed storage layer so that future requests for such data can be fulfilled much faster than is possible through accessing its primary storage location
+
+    Q)🧐What is a polyfill? A polyfill allows you to use features that are not supported by a browser (or a specific browser version) by adding a fallback that mimics the desired behavior using supported API.
+
+    @😗INTERVIEW__PERSPECTIVE😗@
+
+     WHY React has fast 🧐??
+     yaa react is fast in itself but react needs a lot of thing for it too make it fast.
+    -🎗️when you'are building a fast web application react it just a small part of it.
+    -🎗️becz react uses so many modules,BUNDLERS[e.g:parcel(it uses dependensis)]
+    -🎗️it ack as a Catalist
+
   ]
    
    
