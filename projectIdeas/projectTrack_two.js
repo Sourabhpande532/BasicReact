@@ -187,8 +187,28 @@ So,How do we get Parser
    :-> -🎗️you'll get at the end of code our little bit Js code while scroll up. @find_key on index.js file
    -So, this is code where react & ReactDOM code imported from this 📂dist folder.
 
-  -@👉😗WHAT_PARCEL_DOES_IT_FOR_US:↙️
-      --[🔺HMR,🔺FWR,🔺Bundling,
+
+
+
+
+
+
+  @😗INTERVIEW__PERSPECTIVE😗@
+
+     WHY React has fast 🧐??
+     yaa react is fast in itself but react needs a lot of thing for it too make it fast.
+    -🎗️when you'are building a fast web application react it just a small part of it.
+    -🎗️becz react uses so many modules,BUNDLERS[e.g:parcel(it uses dependensis)]
+    -🎗️it ack as a Catalist
+    -🎗️There are so many things that react optimize for us & there are so many things that BUNDLERS gives us a whole application is combinatiion of all those things whatsoever we discuss like HMR,minify,tree shaking,images optimization,compression....see below e.g this term.
+    -🎗️ And in those one @-SAYS-@: We've package-manager which handles & takes care of 😍😍transistive dependencies on our Code.
+    -🎗️@-SAYS-@: When we build production ready app we need to do lot more thing...e.g HMR,FMR,🔺Bundling..... likevise below one 👇👇tell the Interviewer and we can't do this alone for that we need dependencies when we need dependencies so those dependencies also depend on another know as 😍😍Transitive Dependensis(base on Tree dependencies).
+ 
+   H.W: Ref: ✈️🔗https://parceljs.org/features/development/   (to more cler your doubt)
+
+
+  -@👉😗WHAT_PARCEL_DOES_IT_FOR_US:↙️ H.W
+      --[🔺Create a server for you, It enables🔺HMR(Hot model Replacement),🔺FWR,🔺Bundling,
       --🔺minifying,
       --🔺cleaning our code(in the sense you'll never ever find console.log() in dist/index.js), 
       --🔺Just taking less time(e.g: 2.07:when we build for production build as compare Development build(try:-> npx parcel src/index.html && for saving as well take too time so for that use above)) it manage 
@@ -201,20 +221,20 @@ So,How do we get Parser
       --🔺HTTPS on dev(somethimes need to check our app on HTTPS so parcel can give u a that functionality to run our app only https on ""local dev machines"" @👉TYPE:-> npx parcel src/index.html --https took more time to load 400ms] this parcel uses
       --🔺consistent Hashing Algorithm(to cache thing up)
       --🔺Zero Config
+      --🔺Tree shaking- remove unwanted-code (let's suppose you'r app importing a library which has lot of function let gives you access 10 or 20 helper function so parcel what does it choose whatever it need among them and other one ignore)
 
       --🔺Transitive Dependensis(one dependant on another another dependant on another....continue cycle is know as) 
 
       @↖️--LINK--↙️@
 
       IF Parcel Is not Responsible for this Then what 🧐??
-      :->then The packages,node_modules parcel is not doing in itself they always ask for those packages if you go on packaglockjson find "parcel" you'll get to know it has dependant on anather another dependant on 3rd one ....continue cycle is know as" Transitive Dependensis"
+      :->then The packages,node_modules parcel is not doing in itself they always ask for those packages if you go on packaglockjson find "parcel" you'll get to know it has dependant on anather another dependant on 3rd one ....continue cycle is know as" 😍😍Transitive Dependensis"
 
       @↖️--LINK--↙️@
 
       @😗INTERVIEW__PERSPECTIVE😗@
-      @-SAYS-@: We've package-manager which handles & takes care of transistive dependencies on our Code.
+      @-SAYS-@: We've package-manager which handles & takes care of 😍😍transistive dependencies on our Code.
 
-      
    -@Conclusion:->Pracel take care all the Development and the production defferences.
 
    -------------)NEW)------------
@@ -228,17 +248,39 @@ So,How do we get Parser
     Q)🧐What is caching in JavaScript?
     Caching is the process of storing data in a high-speed storage layer so that future requests for such data can be fulfilled much faster than is possible through accessing its primary storage location
 
-    Q)🧐What is a polyfill? A polyfill allows you to use features that are not supported by a browser (or a specific browser version) by adding a fallback that mimics the desired behavior using supported API.
+    Q)🧐What is a polyfill & Babel? 
+    ->A polyfill allows you to use features that are not supported by a browser (or a specific browser version) by adding a fallback that mimics the desired behavior using supported API.
+    -> in other word it is basically a code which is replaceble for a newer version of code let's say you'r browser don't understand the concept of promises(ES6) so it turn it into other peace of code that easy to understand any browser. let's this Array.map() don't understand so it turn it into like that function maMap(){}...another one browser doesn't understand let,const ----> turn it into var.
 
-    @😗INTERVIEW__PERSPECTIVE😗@
+    😱Given the fact 🧐who convert this newer to older code it's obivious 🔺"Babel"
+    Babel use use something know as "browserlist" so it manage the track of which version of code which we working in.
+    -Babel is just a "Js package" it is just a "library" it just "node package" takes newer code and turn it into suitable one that is know as polyfill.
 
-     WHY React has fast 🧐??
-     yaa react is fast in itself but react needs a lot of thing for it too make it fast.
-    -🎗️when you'are building a fast web application react it just a small part of it.
-    -🎗️becz react uses so many modules,BUNDLERS[e.g:parcel(it uses dependensis)]
-    -🎗️it ack as a Catalist
+   what is Babel  🧐😑?
+   it's kind of dependencies which uses parcel and it's use for transpilation. what is ?
+   Transpilation is the process of converting a language into an equivalent version of the same language. Modern JavaScript can be transpiled into older syntax, making it compatible with older browsers.
 
-  ]
+   So I do I make my app compatible with browser 🧐😑??
+
+   @-Search-@:-> Ref:-> ✈️🔗https://www.npmjs.com/package/browserslist
+
+   -It is thing which our code compatible with particular browser
+   need to bring some code from browser site and inject it into package.json.
+   what you need to inject on that inside ["last 2 versions"] so when i write like this so my app parcel will make sure my app is working in last 2 version of all the browser avalable. 
+
+   Ref:-> ✈️🔗https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
+   Ref:-> ✈️🔗https://github.com/browserslist/browserslist#readme [GO and see querry composition & put value A/c to that] e.g "cover 99.5"% instead "last 2 versions"
+
+
+   what is script elements 🧐😑❓ H.W like 
+   <script type="module" src="App.js"/> ❓❓
+   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
+
+
+   -------------)NEW)------------
+   what does that mean gitignore 🧐😑??
+   Do you know git init ? it is basically a command that which will make our Repo compatible with git. once after you'r ready use all the feature like branching,merging,adding all one...
+
    
    
 
