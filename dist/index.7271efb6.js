@@ -142,11 +142,11 @@
       this[globalName] = mainExports;
     }
   }
-})({"gNh9b":[function(require,module,exports) {
+})({"hcwwj":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SECURE = true;
+var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "7fb4cd117271efb6";
 "use strict";
@@ -2949,12 +2949,14 @@ var _clientDefault = parcelHelpers.interopDefault(_client);
 const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h3", {
     id: "Title",
     className: "class",
-    description: "react js"
+    description: "react js",
+    key: "h3"
 }, "Hello,Via Injecting React,Heading 1 through parcel");
 const heading2 = /*#__PURE__*/ (0, _reactDefault.default).createElement("h3", {
     id: "Title",
     className: "class",
     description: "react js",
+    key: "h3",
     style: {
         color: "green",
         backgroundColor: "red",
@@ -2967,7 +2969,7 @@ const divContainer = /*#__PURE__*/ (0, _reactDefault.default).createElement("div
     heading,
     heading2
 ]);
-console.log(heading); // at the end of the we got to know it's nothing but an "Object".
+// at the end of the we got to know it's nothing but an "Object".
 const roots = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 //
 roots.render(divContainer);
@@ -26495,6 +26497,6 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}]},["gNh9b","1xC6H","2kQhy"], "2kQhy", "parcelRequireb13a")
+},{"7422ead32dcc1e6b":"786KC"}]},["hcwwj","1xC6H","2kQhy"], "2kQhy", "parcelRequireb13a")
 
 //# sourceMappingURL=index.7271efb6.js.map

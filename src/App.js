@@ -6,6 +6,7 @@ const heading = React.createElement(
     id: "Title",
     className: "class",
     description: "react js",
+    key:"h3"
     // style: { color: "red", backgroundColor: "pink", fontSize: "30px" },
   },
   "Hello,Via Injecting React,Heading 1 through parcel"
@@ -17,6 +18,7 @@ const heading2 = React.createElement(
     id: "Title",
     className: "class",
     description: "react js",
+    key: "h3",
     style: { color: "green", backgroundColor: "red", fontSize: "40px" },
   },
   "Hello,Via Injecting React,Heading 2"
