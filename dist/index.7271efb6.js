@@ -2956,20 +2956,22 @@ const heading2 = /*#__PURE__*/ (0, _reactDefault.default).createElement("h3", {
     id: "Title",
     className: "class",
     description: "react js",
-    key: "h3",
+    key: "hthree",
     style: {
         color: "green",
         backgroundColor: "red",
         fontSize: "40px"
     }
 }, "Hello,Via Injecting React,Heading 2");
+console.log(heading2);
 const divContainer = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
-    id: "container"
+    id: "container",
+    key: "div-container"
 }, [
     heading,
     heading2
 ]);
-// at the end of the we got to know it's nothing but an "Object".
+console.log(heading); // at the end of the we got to know it's nothing but an "Object".
 const roots = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 //
 roots.render(divContainer);

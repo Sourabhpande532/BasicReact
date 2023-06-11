@@ -1,5 +1,6 @@
 import React from "react";
 import  ReactDOM  from "react-dom/client";
+
 const heading = React.createElement(
   "h3",
   {
@@ -18,16 +19,18 @@ const heading2 = React.createElement(
     id: "Title",
     className: "class",
     description: "react js",
-    key: "h3",
+    key: "hthree",
     style: { color: "green", backgroundColor: "red", fontSize: "40px" },
   },
   "Hello,Via Injecting React,Heading 2"
 );
+console.log(heading2)
 
 const divContainer = React.createElement(
   "div",
   {
     id: "container",
+    key: "div-container"
   },
   [heading, heading2]
 );

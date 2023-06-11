@@ -1,5 +1,9 @@
 {
-    "plugins": [ ["transform-remove-console", { "exclude": [ "error", "warn"] }] ]
-  }
+  // "plugins": [["transform-remove-console", { "exclude": ["error", "warn"] }]]
+}
+
+// {
+//   "plugins": [ ["transform-remove-console", { "exclude": [ "error", "warn"] }] ]
+// }
 
 //   just read documentation above one so should we remove error in the production or NOt ?? No. it's all of to us.
